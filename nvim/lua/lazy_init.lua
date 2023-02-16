@@ -65,4 +65,5 @@ require("lazy").setup({
   },
   "folke/zen-mode.nvim",
   "kylechui/nvim-surround",
+  "mbbill/undotree",
 })
