@@ -9,6 +9,7 @@ opt.clipboard = 'unnamedplus'         -- Copy/paste to system clipboard
 opt.swapfile = false                  -- Don't use swapfile
 opt.completeopt = 'menuone,noinsert,noselect'  -- Autocomplete options
 opt.scrolloff=5
+-- opt.guicursor=''
 
 -----------------------------------------------------------
 -- Neovim UI
