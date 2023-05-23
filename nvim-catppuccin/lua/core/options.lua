@@ -26,6 +26,7 @@ opt.linebreak = true        -- Wrap on word boundary
 opt.termguicolors = true    -- Enable 24-bit RGB colors
 opt.laststatus=3            -- Set global statusline
 
+opt.colorcolumn = "80"
 
 -----------------------------------------------------------
 -- Tabs, indent

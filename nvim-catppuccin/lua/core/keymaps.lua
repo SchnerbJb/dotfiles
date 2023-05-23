@@ -6,8 +6,10 @@ local function map(mode, lhs, rhs, opts)
   vim.api.nvim_set_keymap(mode, lhs, rhs, options)
 end
 
+
 -- Map Leader as Space
 vim.g.mapleader = ' '
+
 
 -- Clear search highlighting with <leader> and d
 map('n', '<leader>d', ':nohl<CR>')
@@ -35,21 +37,16 @@ map('n', '<leader>th', '<C-w>t<C-w>H') -- change horizontal to vertical
 
 -- Fast saving with <leader> and w
 map('n', '<leader>w', ':w<CR>')
-
 map('n', '<leader>q', ':qa!<CR>')
 
 -- Navigate line
-map('n', '<A-h>', '0')
-map('n', '<A-l>', '$')
-
-map('v', '<A-h>', '0')
-map('v', '<A-l>', '$')
+map('n', '<leader>h', '0')
+map('n', '<leader>l', '$')
 
 -- Easier movement
 map('n', '<C-u>', '<C-u>zz')
 map('n', '<C-d>', '<C-d>zz')
 map('n', 'n', 'nzz')
-
 
 -- NvimTree
 map('n', '<leader>e', ':NvimTreeToggle<CR>')
