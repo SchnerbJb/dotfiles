@@ -14,7 +14,7 @@ opt.relativenumber = true
 opt.ignorecase = true
 opt.smartcase = true
 
-opt.colorcolumn = "80"
+-- opt.colorcolumn = "80"
 
 opt.shiftwidth = 4
 opt.smartindent = true
