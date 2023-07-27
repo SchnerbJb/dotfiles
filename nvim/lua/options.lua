@@ -61,3 +61,18 @@ autocmd('Filetype', {
   command = 'setlocal cc=0'
 })
 
+autocmd('Filetype', {
+    pattern = { 'c' },
+    command = 'set shiftwidth=2'
+})
+
+autocmd('Filetype', {
+    pattern = { 'cpp' },
+    command = 'set shiftwidth=2'
+})
+
+autocmd('Filetype', {
+    pattern = { 'go' },
+    command = 'set shiftwidth=8'
+})
+

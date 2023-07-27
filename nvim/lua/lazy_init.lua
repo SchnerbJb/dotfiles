@@ -4,11 +4,11 @@ require("lazy").setup({
 	"preservim/tagbar",
 	"nvim-lua/plenary.nvim",
 
-	"ellisonleao/gruvbox.nvim",
-	"catppuccin/nvim", as = "catppuccin",
-	{ "rose-pine/neovim", name = 'rose-pine' },
-	"EdenEast/nightfox.nvim",
-	"shaunsingh/nord.nvim",
+	-- "ellisonleao/gruvbox.nvim",
+	-- "catppuccin/nvim", as = "catppuccin",
+	-- { "rose-pine/neovim", name = 'rose-pine' },
+	-- "EdenEast/nightfox.nvim",
+	-- "shaunsingh/nord.nvim",
 
 	"nvim-telescope/telescope.nvim",
 
@@ -22,8 +22,8 @@ require("lazy").setup({
 	"tikhomirov/vim-glsl",
 
 	"mfussenegger/nvim-dap",
-	-- "jose-elias-alvarez/null-ls.nvim",
-
+	"rcarriga/nvim-dap-ui",
+	"ThePrimeagen/harpoon",
 
 	{
 	    "timtro/glslView-nvim",
@@ -39,11 +39,6 @@ require("lazy").setup({
 	    "nvim-lualine/lualine.nvim",
 	    config = function()
 		require("lualine").setup{
-		    options = {
-			-- theme = 'gruvbox_light',
-			theme = 'nord',
-
-		    },
 		    sections = {
 			lualine_x = {'filetype'},
 		    }

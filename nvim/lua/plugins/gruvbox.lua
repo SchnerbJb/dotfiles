@@ -1,16 +1,19 @@
-require("gruvbox").setup({
-	italic = {
-		strings = false,
-		comments = false,
-		folds = false,
-	},
-	overrides = {
-		Comment = { fg = "#458588" },
-	},
-})
+-- require("gruvbox").setup({
+-- 	italic = {
+-- 		strings = false,
+-- 		comments = false,
+-- 		folds = false,
+-- 	},
+-- 	overrides = {
+-- 		Comment = { fg = "#458588" },
+-- 	},
+-- })
 vim.opt.termguicolors = true
 
-vim.cmd([[colorscheme nordfox]])
+vim.cmd [[ hi Pmenu guibg=#191e29 ]]
+vim.cmd [[ hi PmenuSel guibg=#2f394f ]]
+
+-- vim.cmd([[colorscheme nordfox]])
 
 -- vim.g.nord_italic = false
 -- require('nord').set()

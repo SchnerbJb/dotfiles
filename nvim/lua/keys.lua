@@ -8,9 +8,6 @@ end
 
 vim.g.mapleader = ' '
 
-map('n', '<leader>h', '0')
-map('n', '<leader>l', '$')
-
 map('i', 'jk', '<Esc>')
 map('i', 'JK', '<Esc>')
 
@@ -20,13 +17,13 @@ map('n', 'n', 'nzz')
 
 map('n', 'H', '<cmd>bp<CR>')
 map('n', 'L', '<cmd>bn<CR>')
-map('n', 'J', '}')
-map('n', 'K', '{')
+-- map('n', 'J', '}')
+-- map('n', 'K', '{')
 
-map('n', '<C-h>', '<C-w>h')
-map('n', '<C-j>', '<C-w>j')
-map('n', '<C-k>', '<C-w>k')
-map('n', '<C-l>', '<C-w>l')
+map('n', '<C-H>', '<C-W>h')
+map('n', '<C-j>', '<C-W>j')
+map('n', '<C-k>', '<C-W>k')
+map('n', '<C-l>', '<C-W>l')
 
 map('n', '<leader>d', ':nohl<CR>')
 
@@ -35,16 +32,19 @@ map('n', '<leader>e', '<cmd>NvimTreeToggle<CR>')
 map('n', '<C-s>', '<C-w>s')
 map('n', '<C-q>', '<C-w>v')
 map('n', '<C-c>', '<C-w>q')
+-- map('n', '<C-,>', '<CMD>resize +10<CR>')
+-- map('n', '<C-.>', '<CMD>resize -10<CR>')
+-- map('n', '<C->>', '10<C-w>>')
+-- map('n', '<C-<>', '10<C-w><')
 
 function newTab()
     vim.api.nvim_command('tabnew<CR>')
     require("telescope.builtin").find_files()
 end
 
-map('n', '<C-t>', '<cmd> lua newTab()<CR>')
+map('n', '<C-t>', '<CMD> lua newTab()<CR>')
 map('n', '<C-n>', '<CMD>tabnext<CR>')
 map('n', '<C-p>', '<CMD>tabnext -<CR>')
--- map('n', '<C-x>', '<CMD>tabclose<CR>')
 
 
 

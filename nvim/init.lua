@@ -9,4 +9,5 @@ require("plugins/nvim-treesitter")
 require("plugins/luasnip")
 require("plugins/lsp-zero")
 require("plugins/wiki")
+require("plugins/dap")
 
