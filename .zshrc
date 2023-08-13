@@ -118,4 +118,4 @@ export TERM=xterm-256color
 export PATH="/home/exaryss/.local/bin/:/home/exaryss/.cargo/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/home/exaryss/.local/share/JetBrains/Toolbox/scripts:/home/exaryss/.cabal/bin:/home/exaryss/.ghcup/bin"
 export GOPATH=$HOME/.local/share/go
 export PATH=$PATH:$HOME/.local/share/zig
-eval "$(starship init zsh)"
+# eval "$(starship init zsh)"

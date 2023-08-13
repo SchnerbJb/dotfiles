@@ -10,10 +10,11 @@ end
 
 config.front_end = "OpenGL"
 -- config.color_scheme = 'Gruvbox Light'
-config.color_scheme = 'nordfox'
-config.font = wezterm.font 'Cartograph CF'
+-- config.color_scheme = 'nordfox'
+-- config.font = wezterm.font 'Cartograph CF'
+-- config.font = wezterm.font 'Iosevka'
 config.enable_tab_bar = false
-config.scrollback_lines = 5000
+-- config.scrollback_lines = 5000
 
 config.leader = { key="a", mods="ALT" }
 config.adjust_window_size_when_changing_font_size = false
@@ -45,5 +46,6 @@ config.keys = {
 
 }
 
+config.default_prog = { '/home/exaryss/.cargo/bin/nu' }
 
 return config

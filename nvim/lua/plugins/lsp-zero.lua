@@ -1,14 +1,6 @@
 vim.opt.signcolumn = 'yes'
 local lsp = require('lsp-zero')
--- local null_ls = require("null-ls")
 local lspconfig = require("lspconfig")
-
--- null_ls.setup({
---     sources = {
--- 	null_ls.builtins.formatting.prettier,
--- 	null_ls.builtins.formatting.clang_format,
---     }
--- })
 
 lsp.preset('recommended')
 
@@ -17,6 +9,8 @@ lsp.ensure_installed({
     'rust_analyzer',
     'pyright',
 })
+
+lspconfig.gdscript.setup({})
 
 local cmp = require('cmp')
 local cmp_select = { behavior = cmp.SelectBehavior.Select }

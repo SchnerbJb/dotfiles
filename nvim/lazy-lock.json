@@ -9,6 +9,7 @@
   "cmp_luasnip": { "branch": "master", "commit": "18095520391186d634a0045dacaa346291096566" },
   "friendly-snippets": { "branch": "main", "commit": "ea84a710262cb2c286d439070bad37d36fd3db25" },
   "glslView-nvim": { "branch": "master", "commit": "dcf4efda9d90457e1805d511986a2bd5777ed36f" },
+  "godot.nvim": { "branch": "main", "commit": "9a2d631c6a6313553dbd66f749ed3bc99bd4b4a9" },
   "harpoon": { "branch": "master", "commit": "21f4c47c6803d64ddb934a5b314dcb1b8e7365dc" },
   "lazy.nvim": { "branch": "main", "commit": "25beed5e2e935ebc00d7e3eed1dc502df3c40e39" },
   "lsp-zero.nvim": { "branch": "v1.x", "commit": "7e1675e9e90ee08b859d75aa65609e480e55f752" },
