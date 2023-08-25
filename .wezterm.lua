@@ -46,6 +46,6 @@ config.keys = {
 
 }
 
-config.default_prog = { '/home/exaryss/.cargo/bin/nu' }
+-- config.default_prog = { '/home/exaryss/.cargo/bin/nu' }
 
 return config
