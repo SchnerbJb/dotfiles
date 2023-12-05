@@ -20,7 +20,7 @@ map('n', 'L', '<cmd>bn<CR>')
 -- map('n', 'J', '}')
 -- map('n', 'K', '{')
 
-map('n', '<C-H>', '<C-W>h')
+map('n', '<C-h>', '<C-W>h')
 map('n', '<C-j>', '<C-W>j')
 map('n', '<C-k>', '<C-W>k')
 map('n', '<C-l>', '<C-W>l')
@@ -52,7 +52,11 @@ map('n', '<C-u>', '<C-u>zz')
 map('n', '<C-d>', '<C-d>zz')
 
 map('n', '<leader>z', '<CMD>ZenMode<CR>')
-map('n', '<leader>t', '<CMD>TagbarToggle<CR>')
+map('n', '<leader>T', '<CMD>TagbarToggle<CR>')
+map('n', 'J', '')
+
+map('t', '<ESC>', '<C-\\><C-n>')
+map('t', '<C-d>', '<C-\\><C-n>:q!<CR>')
 
 
 map('n', 'm', ':')

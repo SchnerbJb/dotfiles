@@ -11,7 +11,7 @@ end
 config.front_end = "OpenGL"
 -- config.color_scheme = 'Gruvbox Light'
 -- config.color_scheme = 'nordfox'
--- config.font = wezterm.font 'Cartograph CF'
+config.font = wezterm.font 'Cartograph CF'
 -- config.font = wezterm.font 'Iosevka'
 config.enable_tab_bar = false
 -- config.scrollback_lines = 5000
@@ -21,6 +21,7 @@ config.adjust_window_size_when_changing_font_size = false
 
 config.keys = {
 	{ key = "Tab", mods = "CTRL", action = wezterm.action.DisableDefaultAssignment },
+	{ key = "w", mods = "ALT", action=wezterm.action.TogglePaneZoomState },
 	{ key = "+", mods = "ALT", action=wezterm.action.IncreaseFontSize },
 	{ key = "-", mods = "ALT", action=wezterm.action.DecreaseFontSize },
 	{ key = "r", mods = "LEADER", action=wezterm.action.RotatePanes 'Clockwise' },

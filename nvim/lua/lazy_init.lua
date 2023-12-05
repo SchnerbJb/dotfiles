@@ -3,6 +3,8 @@ require("lazy").setup({
 	"nvim-tree/nvim-tree.lua",
 	"preservim/tagbar",
 	"nvim-lua/plenary.nvim",
+	-- "tpope/vim-dadbod",
+	-- "kristijanhusak/vim-dadbod-ui",
 
 	-- "ellisonleao/gruvbox.nvim",
 	-- "catppuccin/nvim", as = "catppuccin",
@@ -13,17 +15,24 @@ require("lazy").setup({
 	"nvim-telescope/telescope.nvim",
 
 	"nvim-treesitter/nvim-treesitter",
-	"nvim-treesitter/nvim-treesitter-context",
-	"jiangmiao/auto-pairs",
+	-- "nvim-treesitter/nvim-treesitter-context",
+	"windwp/nvim-ts-autotag",
 
 	"tpope/vim-fugitive",
-	"folke/zen-mode.nvim",
+	-- "folke/zen-mode.nvim",
 
-	"tikhomirov/vim-glsl",
+	-- "tikhomirov/vim-glsl",
 
 	"mfussenegger/nvim-dap",
 	"rcarriga/nvim-dap-ui",
 	"ThePrimeagen/harpoon",
+	{
+	    'windwp/nvim-autopairs',
+	    event = "InsertEnter",
+	    config = function()
+		require('nvim-autopairs').setup({})
+	    end
+	},
 
 	{
 	    "timtro/glslView-nvim",
@@ -91,6 +100,6 @@ require("lazy").setup({
 		     }
 		 end
 	},
-	{ "echasnovski/mini.nvim", version=false },
+	-- { "echasnovski/mini.nvim", version=false },
 
 })

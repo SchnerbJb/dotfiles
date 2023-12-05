@@ -30,5 +30,5 @@ ls.add_snippets(nil, {
         }, {
             func(date, {}),
         }),
-    },
+    }
 })

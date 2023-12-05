@@ -3,6 +3,8 @@ if not status_ok then
   return
 end
 
+require('nvim-ts-autotag').setup()
+
 nvim_treesitter.setup {
   ensure_installed = {
     'bash', 'c', 'cpp', 'css', 'html', 'javascript', 'json', 'lua', 'python',

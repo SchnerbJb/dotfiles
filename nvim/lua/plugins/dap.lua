@@ -16,7 +16,7 @@ dap.configurations.gdscript = {
 dap.adapters.cppdbg = {
     id = "cppdbg",
     type = "executable",
-    command = '/home/exaryss/Downloads/extension/debugAdapters/bin/OpenDebugAD7'
+    command = '/home/exaryss/.local/share/extension/debugAdapters/bin/OpenDebugAD7'
 }
 
 dap.configurations.cpp = {
@@ -32,7 +32,15 @@ dap.configurations.cpp = {
     }
 }
 local dapui = require("dapui")
-dapui.setup()
+dapui.setup({
+    mappings = {
+	open = "o",
+	remove = "d",
+	edit = "e",
+	repl = "r",
+	toggle = "t",
+    }
+})
 
 local dap, dapui = require("dap"), require("dapui")
 dap.listeners.after.event_initialized["dapui_config"] = function()

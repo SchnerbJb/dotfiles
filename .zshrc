@@ -113,9 +113,20 @@ alias wnvim="nvim ~/Documents/notes/wiki/index.wiki"
 [ -f "/home/exaryss/.ghcup/env" ] && source "/home/exaryss/.ghcup/env" # ghcup-env
 
 
-export ANDROID_HOME=$HOME/Documents/Android/Sdk
-export TERM=xterm-256color
-export PATH="/home/exaryss/.local/bin/:/home/exaryss/.cargo/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/home/exaryss/.local/share/JetBrains/Toolbox/scripts:/home/exaryss/.cabal/bin:/home/exaryss/.ghcup/bin"
+# export PATH="/home/exaryss/.local/bin/:/home/exaryss/.cargo/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/home/exaryss/.local/share/JetBrains/Toolbox/scripts:/home/exaryss/.cabal/bin:/home/exaryss/.ghcup/bin:/home/exaryss/.local/share/zig"
 export GOPATH=$HOME/.local/share/go
-export PATH=$PATH:$HOME/.local/share/zig
+# export ANDROID_HOME=$HOME/Documents/Android/Sdk
+# export NDK_HOME=$HOME/Documents/Android/Sdk
+export TERM=xterm-256color
+export JAVA_HOME="/usr/lib/jvm/java-11-openjdk"
+export ANDROID_HOME="$HOME/Documents/Android/Sdk/sources/android-33"
+export NDK_HOME="$HOME/Documents/Android/Sdk/ndk/25.0.8775105"
 # eval "$(starship init zsh)"
+
+# bun completions
+[ -s "/home/exaryss/.bun/_bun" ] && source "/home/exaryss/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+export PATH="$HOME/.config/emacs/bin:$PATH"

@@ -63,16 +63,46 @@ autocmd('Filetype', {
 
 autocmd('Filetype', {
     pattern = { 'c' },
-    command = 'set shiftwidth=2'
+    command = 'set shiftwidth=2 tabstop=2'
 })
 
 autocmd('Filetype', {
     pattern = { 'cpp' },
-    command = 'set shiftwidth=2'
+    command = 'set shiftwidth=2 tabstop=2'
+})
+
+autocmd('Filetype', {
+    pattern = { 'html' },
+    command = 'set shiftwidth=2 tabstop=2'
+})
+
+autocmd('Filetype', {
+    pattern = { 'json' },
+    command = 'set shiftwidth=2 tabstop=2'
+})
+
+autocmd('Filetype', {
+    pattern = { 'javascript' },
+    command = 'set shiftwidth=2 tabstop=2'
+})
+
+autocmd('Filetype', {
+    pattern = { 'typescript' },
+    command = 'set shiftwidth=2 tabstop=2'
+})
+
+autocmd('Filetype', {
+    pattern = { 'javascriptreact' },
+    command = 'set shiftwidth=2 tabstop=2'
+})
+
+autocmd('Filetype', {
+    pattern = { 'typescriptreact' },
+    command = 'set shiftwidth=2 tabstop=2'
 })
 
 autocmd('Filetype', {
     pattern = { 'go' },
-    command = 'set shiftwidth=8'
+    command = 'set shiftwidth=2 tabstop=2'
 })
 
